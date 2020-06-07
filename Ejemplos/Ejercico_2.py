@@ -14,10 +14,13 @@ print(f"El item {n} de la serie de Fibonacci es {item}")
 a=0
 b=1
 c=0
-n=10
-while n>0:
+sumaT=0
+
+while c<4000000:
     c=a+b
     a=b
     b=c
-    n=n-1
-    print(c)
+    if c%2==0:
+        sumaT = sumaT+c
+    
+print(sumaT)
