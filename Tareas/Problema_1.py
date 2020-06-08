@@ -10,12 +10,12 @@ while True:
     try:
         numero=int(input("Introduzca un numero ( N ) : ")) # Hasta aqui se encuentran los N numeros perfectos
         if numero <= 0:
-            print("ERROR - Debe ingresar un numero mayor a cero")
+            print("--> ERROR : Debe ingresar un numero mayor a cero \n")
             continue
         else:
             break
     except ValueError:
-        print("ERROR - Debe ingresar un numero")
+        print("--> ERROR : Debe ingresar un numero \n")
 
 print("\n")
 
@@ -36,9 +36,11 @@ for o in lista:
     if NumeroPerfecto(num):
         resultado.append(num)
 
-print("Numeros encontrados: \n")
+print("Numeros perfectos encontrados: \n")
 
-for m in resultado:
-    print(m)
-
+if(len(resultado)==0):
+    print("---> No se encontraron numeros perfectos")
+else:
+    for m in resultado:
+        print("-> ",m)
 print("\n")       
