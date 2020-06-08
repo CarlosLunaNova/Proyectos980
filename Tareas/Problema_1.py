@@ -6,8 +6,17 @@ print(
 '''
 )
 
-numero=int(input("Introduzca un numero ( N ) : ")) # Hasta aqui se encuentran los N numeros perfectos
-       
+while True:    
+    try:
+        numero=int(input("Introduzca un numero ( N ) : ")) # Hasta aqui se encuentran los N numeros perfectos
+        if numero <= 0:
+            print("ERROR - Debe ingresar un numero mayor a cero")
+            continue
+        else:
+            break
+    except ValueError:
+        print("ERROR - Debe ingresar un numero")
+
 print("\n")
 
 lista = range(1,numero+1)
@@ -33,4 +42,3 @@ for m in resultado:
     print(m)
 
 print("\n")       
-
