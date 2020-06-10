@@ -1,4 +1,4 @@
-num = 232000000
+num = 1 # Funciona pero se tarda una ETERNIDAD 
 rango = 20
 out = []
 
@@ -6,7 +6,6 @@ def divisor(n):
     for i in range(1,rango+1):
         if(n%i==0):
             out.append(i)
-
 
 while True:
     divisor(num)
