@@ -4,6 +4,8 @@ def esPar(num):
     else:
         return True
 
-for i in range(100):
+for i in range(10):
     if(esPar(i)):
-        print("Es par : ",i)
+        print("Es par   : ",i)
+    else:
+        print("Es impar : ",i)
