@@ -1,0 +1,21 @@
+'''
+Cada objetiene sus atributos y sus funciones propias de cada uno
+todos los objetos de la misma clase poseen los mismos atributos y funciones
+pero cada parametro varia entre estos
+
+Un objeto es una coleccion de datos y funciones ordenados en una jerarquia
+
+
+class planeta(object):   # Funciona como una plantilla de la que se extraen las 
+    pass                 # caracteristicas y funciones
+
+c = planeta()            # Cada objeto se denomina como una instancia
+print(type(c))           # de la clase principal ( __main__ )
+print(c)
+
+
+Estado = conjunto de atributos
+Comportamiento = conjunto de funciones
+Identidad = diferencia de otros objetos
+'''
+
