@@ -2,7 +2,7 @@ import socket
 
 SERVER_IP   = '157.245.82.242'
 SERVER_PORT = 9800
-BUFFER_SIZE = 16
+BUFFER_SIZE = 16*1024
 
 # Se crea socket TCP
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -15,7 +15,7 @@ sock.connect(server_address)
 try:
 
     # Se envia un texto codificado EN BINARIO
-    message = b'Este es un mensaje.  El texto se divide en bloques de BUFFER_SIZE bytes.'
+    message = b'Dicen que el Karmann Ghia no tiene radiador.'
     print('\n\nEnviando el siguiente texto:  {!s}'.format(message))
     sock.sendall(message) #Se envia utilizando "socket.sendall" 
 
