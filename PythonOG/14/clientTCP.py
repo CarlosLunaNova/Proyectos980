@@ -1,6 +1,6 @@
 import socket
 
-SERVER_IP   = '157.245.82.242'
+SERVER_IP   = '192.168.1.4'
 SERVER_PORT = 9800
 BUFFER_SIZE = 16 * 1024
 
