@@ -16,7 +16,7 @@ while True:
     try:
 
         # Se envia un texto codificado EN BINARIO
-        message = input('\nIngrese su mensaje: ').encode()
+        message = input('\nIngrese el mensaje: ').encode()
         print('\nEnviando el siguiente texto:  {!s}'.format(message))
         sock.sendall(message) #Se envia utilizando "socket.sendall" 
         print("\n")
